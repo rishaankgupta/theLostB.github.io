@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Building a Second Brain with Obsidian | The Midnight Editor</title>
+    <meta name="description"
+        content="A practical guide to personal knowledge management using Obsidian. How to capture, connect, and retrieve knowledge effectively." />
+    <meta name="keywords"
+        content="Obsidian, PKM, personal knowledge management, second brain, note-taking, Zettelkasten" />
+    <meta name="author" content="Rishaank Gupta" />
+    <link rel="canonical" href="https://lostboy.me/posts/second-brain-obsidian.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .prose h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #000;
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .prose p {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+
+        .prose ul,
+        .prose ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            line-height: 1.7;
+        }
+
+        .prose blockquote {
+            border-left: 4px solid #000;
+            padding-left: 1.5rem;
+            font-style: italic;
+            margin: 2rem 0;
+            color: #444;
+        }
+
+        .prose code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black min-h-screen">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white border-b border-black p-6">
+        <div class="flex justify-between items-center max-w-4xl mx-auto">
+            <a href="/index.html" class="font-black uppercase text-xl hover:underline">The Midnight Editor.</a>
+            <div class="flex gap-4">
+                <a href="/archive.html" class="font-bold uppercase text-sm hover:underline">Archive</a>
+                <a href="/about.html" class="font-bold uppercase text-sm hover:underline">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <article class="pt-32 pb-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <header class="border-b border-black pb-8 mb-12">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="font-mono text-xs uppercase border border-black px-2 py-1">Technology</span>
+                    <span class="font-mono text-xs uppercase text-gray-500">February 6, 2026</span>
+                    <span class="font-mono text-xs uppercase text-gray-500">• 11 min read</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-serif font-black leading-tight mb-6">
+                    Building a Second Brain with Obsidian
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    A practical guide to personal knowledge management. How to capture, connect, and retrieve knowledge
+                    effectively.
+                </p>
+            </header>
+
+            <!-- Hero Image -->
+            <figure class="mb-12 -mx-6 md:-mx-12">
+                <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=1200&h=600&fit=crop"
+                    alt="Organized notes and knowledge management system"
+                    class="w-full h-64 md:h-96 object-cover border-y border-black">
+                <figcaption class="text-xs text-gray-500 mt-2 px-6 md:px-12 font-mono">
+                    Photo by <a href="https://unsplash.com" class="underline">Unsplash</a>
+                </figcaption>
+            </figure>
+
+            <div class="prose max-w-none">
+                <p>
+                    Your mind is excellent at having ideas but terrible at storing them. Insights arrive in the shower,
+                    during walks, in the middle of other work—then vanish unless captured. The books you read fade. The
+                    articles you save accumulate unread. Knowledge slips through the cracks of a system never designed
+                    for the information abundance we now face.
+                </p>
+
+                <p>
+                    The solution isn't remembering more—it's externalizing memory into a reliable system. A "second
+                    brain" isn't metaphor; it's infrastructure that extends your cognitive capabilities beyond
+                    biological limits.
+                </p>
+
+                <p>
+                    This guide walks through building such a system using Obsidian, a tool I've used daily for the past
+                    year to manage thousands of notes across every domain I study.
+                </p>
+
+                <h2>Why Obsidian</h2>
+
+                <p>
+                    Other tools exist—Notion, Roam, Logseq, even folders of markdown files. Obsidian wins for me
+                    because:
+                </p>
+
+                <ul>
+                    <li><strong>Local-first:</strong> Your files live on your computer as plain markdown. No vendor
+                        lock-in, no subscription required for core features, no risk of losing everything if a company
+                        shuts down.</li>
+                    <li><strong>Linking:</strong> Bidirectional links between notes create an emergent web of knowledge
+                        that surfaces connections you didn't consciously plan.</li>
+                    <li><strong>Speed:</strong> Even with thousands of notes, search and navigation remain instant. No
+                        loading spinners, no sluggish interfaces.</li>
+                    <li><strong>Extensibility:</strong> A plugin ecosystem lets you add functionality without waiting
+                        for the company to implement features.</li>
+                </ul>
+
+                <h2>Core Principles</h2>
+
+                <p>
+                    Before diving into mechanics, understand the principles that make any PKM system work:
+                </p>
+
+                <h3>1. Capture Everything, Curate Later</h3>
+                <p>
+                    The bar for creating a note should be low. If something catches your attention—a quote, an idea, a
+                    question—capture it immediately. You can't predict what will be useful; you can only make retrieval
+                    reliable.
+                </p>
+
+                <h3>2. Progressive Summarization</h3>
+                <p>
+                    Raw captures aren't useful until processed. When you revisit notes, add layers: bold key phrases,
+                    write summaries, extract atomic ideas. Each touch distills information further.
+                </p>
+
+                <h3>3. Link Liberally</h3>
+                <p>
+                    The value of a PKM system comes from connections, not individual notes. When writing, ask: "What
+                    existing notes relate to this?" Add links aggressively. The graph that emerges encodes relationships
+                    your memory can't hold.
+                </p>
+
+                <h3>4. Retrieve, Don't Just Store</h3>
+                <p>
+                    A perfectly organized system you never use is worthless. Design for retrieval: clear naming,
+                    consistent tagging, serendipitous browsing through links.
+                </p>
+
+                <h2>My Obsidian Structure</h2>
+
+                <p>
+                    After much experimentation, I've settled on a minimal folder structure:
+                </p>
+
+                <ul>
+                    <li><code>00 Inbox</code> — Unsorted captures awaiting processing</li>
+                    <li><code>01 Projects</code> — Active projects with their notes</li>
+                    <li><code>02 Areas</code> — Ongoing responsibilities (Learning, Writing, Health)</li>
+                    <li><code>03 Resources</code> — Reference material organized by topic</li>
+                    <li><code>04 Archive</code> — Completed projects and outdated notes</li>
+                    <li><code>05 Templates</code> — Reusable note structures</li>
+                </ul>
+
+                <p>
+                    This follows the PARA method (Projects, Areas, Resources, Archive) with minor modifications. The
+                    numbered prefixes keep folders in logical order.
+                </p>
+
+                <h3>The Inbox Workflow</h3>
+
+                <p>
+                    Most notes begin in the Inbox—quick captures made throughout the day. Once or twice weekly, I
+                    process the inbox:
+                </p>
+
+                <ol>
+                    <li>Open each note</li>
+                    <li>Is it actionable? If yes, move to Projects or create a task</li>
+                    <li>Is it reference material? Move to Resources with appropriate tags</li>
+                    <li>Is it a fleeting thought? Either develop it or delete it</li>
+                    <li>Add links to related notes</li>
+                </ol>
+
+                <p>
+                    The inbox should empty regularly. Notes that sit there indefinitely become invisible.
+                </p>
+
+                <h2>Linking Strategy</h2>
+
+                <p>
+                    Links are the killer feature. My linking practices:
+                </p>
+
+                <p>
+                    <strong>Atomic notes.</strong> Each note should contain one idea, well-developed. This makes linking
+                    precise—you point to a specific concept, not a pile of loosely related thoughts.
+                </p>
+
+                <p>
+                    <strong>Link as you write.</strong> While drafting, whenever I reference something I've previously
+                    captured, I add a link. The markup is simple: <code>[[Note Name]]</code>.
+                </p>
+
+                <p>
+                    <strong>Backlink discovery.</strong> Obsidian shows every note that links to the current one.
+                    Browsing backlinks often surfaces connections I didn't remember making.
+                </p>
+
+                <p>
+                    <strong>Map of Content (MOC) notes.</strong> For larger topics, I create index notes that link to
+                    all related notes with brief annotations. These serve as entry points into topic clusters.
+                </p>
+
+                <h2>Essential Plugins</h2>
+
+                <p>
+                    Obsidian's core is intentionally minimal. These plugins extend it significantly:
+                </p>
+
+                <ul>
+                    <li><strong>Dataview:</strong> Query your notes like a database. Create automatic indexes, track
+                        reading lists, surface unlinked notes.</li>
+                    <li><strong>Templater:</strong> More powerful templates with dynamic content insertion.</li>
+                    <li><strong>QuickAdd:</strong> Rapid capture from anywhere with predefined templates.</li>
+                    <li><strong>Calendar:</strong> Daily notes integration for journaling and planning.</li>
+                    <li><strong>Excalidraw:</strong> Visual thinking and diagramming within notes.</li>
+                </ul>
+
+                <h2>Daily Practice</h2>
+
+                <p>
+                    The system only works through consistent use. My daily practice:
+                </p>
+
+                <p>
+                    <strong>Morning:</strong> Review daily note template, check what's on today. Glance at "On this day"
+                    showing notes from previous years.
+                </p>
+
+                <p>
+                    <strong>Throughout day:</strong> Capture ideas, meeting notes, and quotes to the inbox via QuickAdd.
+                </p>
+
+                <p>
+                    <strong>Reading:</strong> When reading books or articles, take notes directly in Obsidian with links
+                    to related concepts.
+                </p>
+
+                <p>
+                    <strong>Weekly review:</strong> Process inbox, review recent notes, strengthen links, update MOCs as
+                    clusters grow.
+                </p>
+
+                <h2>Common Mistakes</h2>
+
+                <p>
+                    I made all of these before finding what works:
+                </p>
+
+                <p>
+                    <strong>Over-organizing too early.</strong> Don't build elaborate folder structures before you have
+                    content. Let organization emerge from actual needs.
+                </p>
+
+                <p>
+                    <strong>Hoarding without processing.</strong> Capturing information you never revisit creates the
+                    illusion of learning. The processing step is essential.
+                </p>
+
+                <p>
+                    <strong>Perfectionism.</strong> Messy notes are better than no notes. You can always improve
+                    organization later.
+                </p>
+
+                <p>
+                    <strong>Tool tourism.</strong> Constantly switching PKM apps prevents you from developing the
+                    sustained practice that makes any system valuable.
+                </p>
+
+                <h2>The Compound Effect</h2>
+
+                <p>
+                    PKM systems show their value over time. A note from months ago suddenly becomes relevant. A
+                    connection you didn't see while reading appears when writing. The graph becomes a thinking partner
+                    that remembers what you've forgotten.
+                </p>
+
+                <p>
+                    My Obsidian vault now contains over 2,000 notes built over a year. Finding any piece of knowledge
+                    takes seconds. Writing draws on a reservoir of processed ideas. Learning new material has anchor
+                    points everywhere.
+                </p>
+
+                <p>
+                    The investment is real—building a second brain requires consistent effort. But like physical
+                    exercise, the returns compound. Each note adds value to every other note through potential
+                    connections. The more you put in, the more you get out.
+                </p>
+
+                <blockquote>
+                    "An idea kept private is of no value to the world. An idea shared starts a conversation."
+                </blockquote>
+            </div>
+
+            <footer class="border-t border-black mt-16 pt-8">
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 bg-black text-white flex items-center justify-center font-bold text-xl">RG
+                    </div>
+                    <div>
+                        <p class="font-bold">Rishaank Gupta</p>
+                        <p class="text-gray-600 text-sm">16-year-old polymath building systems for thinking.</p>
+                    </div>
+                </div>
+            </footer>
+
+                        <!-- Social Sharing -->
+            <div class="mt-8 border-t border-black pt-8">
+                <p class="font-mono text-xs uppercase mb-4">Share this article</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://twitter.com/intent/tweet?text=Building%20a%20Second%20Brain%20with%20Obsidian&https%3A%2F%2Flostboy.me%2Fposts%2Fsecond-brain-obsidian.html=https%3A%2F%2Flostboy.me%2Fposts%2Fsecond-brain-obsidian.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-black px-4 py-2 font-bold uppercase text-xs hover:bg-black hover:text-white transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Share on X</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?https%3A%2F%2Flostboy.me%2Fposts%2Fsecond-brain-obsidian.html=https%3A%2F%2Flostboy.me%2Fposts%2Fsecond-brain-obsidian.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-black px-4 py-2 font-bold uppercase text-xs hover:bg-black hover:text-white transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flostboy.me%2Fposts%2Fsecond-brain-obsidian.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-black px-4 py-2 font-bold uppercase text-xs hover:bg-black hover:text-white transition-colors"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
+                    <button onclick="copyLink()" class="inline-flex items-center gap-2 border border-black px-4 py-2 font-bold uppercase text-xs hover:bg-black hover:text-white transition-colors cursor-pointer"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg><span id="copyText">Copy Link</span></button>
+                </div>
+            </div>
+
+            <div class="mt-8 flex gap-4">
+                <a href="/archive.html"
+                    class="border border-black px-4 py-2 font-bold uppercase text-xs hover:bg-black hover:text-white transition-colors">More
+                    Posts</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="border-t border-black py-12 px-6">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+            <div>
+                <h2 class="text-4xl font-black uppercase">The Midnight Editor.</h2>
+                <p class="font-mono text-xs mt-2">© 2026 Rishaank Gupta.</p>
+            </div>
+            <div class="flex flex-col gap-2 font-mono text-sm uppercase text-right">
+                <a href="/privacy.html" class="hover:underline">Privacy</a>
+                <a href="/terms.html" class="hover:underline">Terms</a>
+                <a href="/index.html" class="hover:underline mt-4">Back to Home ↑</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const copyText = document.getElementById('copyText');
+                copyText.textContent = 'Copied!';
+                setTimeout(() => { copyText.textContent = 'Copy Link'; }, 2000);
+            });
+        }
+    </script>
+</body>
+
+</html>
