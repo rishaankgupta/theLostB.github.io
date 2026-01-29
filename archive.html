@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Archive | All Posts | lostboy.me</title>
+    <meta name="description"
+        content="Browse all essays and articles by Rishaank Gupta on technology, science, philosophy, creativity, and more." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lostboy.me/archive" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lostboy.me/archive" />
+    <meta property="og:title" content="Archive | lostboy.me" />
+    <meta property="og:description" content="Browse all essays and articles by Rishaank Gupta." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-black min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white border-b border-black p-6">
+        <div class="flex justify-between items-center max-w-6xl mx-auto">
+            <a href="/index.html" class="font-black uppercase text-xl hover:underline">The Midnight Editor.</a>
+            <div class="flex gap-4">
+                <a href="/about.html" class="font-bold uppercase text-sm hover:underline">About</a>
+                <a href="/index.html" class="font-bold uppercase text-sm hover:underline">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="border-b border-black pb-8 mb-12">
+                <span class="font-mono text-xs uppercase tracking-widest">Browse</span>
+                <h1 class="text-6xl md:text-8xl font-serif font-black mt-4">Archive</h1>
+            </div>
+
+            <!-- Search -->
+            <div class="mb-8">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search posts..."
+                        class="w-full border-2 border-black px-4 py-3 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-black">
+                    <span class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">⌘K</span>
+                </div>
+            </div>
+
+            <!-- Filter -->
+            <div class="flex gap-3 mb-12 flex-wrap" id="filterButtons">
+                <button data-filter="all"
+                    class="filter-btn bg-black text-white px-4 py-2 font-bold uppercase text-sm transition-colors">All</button>
+                <button data-filter="technology"
+                    class="filter-btn border border-black px-4 py-2 font-bold uppercase text-sm hover:bg-black hover:text-white transition-colors">Technology</button>
+                <button data-filter="philosophy"
+                    class="filter-btn border border-black px-4 py-2 font-bold uppercase text-sm hover:bg-black hover:text-white transition-colors">Philosophy</button>
+                <button data-filter="productivity"
+                    class="filter-btn border border-black px-4 py-2 font-bold uppercase text-sm hover:bg-black hover:text-white transition-colors">Productivity</button>
+                <button data-filter="science"
+                    class="filter-btn border border-black px-4 py-2 font-bold uppercase text-sm hover:bg-black hover:text-white transition-colors">Science</button>
+                <button data-filter="culture"
+                    class="filter-btn border border-black px-4 py-2 font-bold uppercase text-sm hover:bg-black hover:text-white transition-colors">Culture</button>
+                <button data-filter="personal"
+                    class="filter-btn border border-black px-4 py-2 font-bold uppercase text-sm hover:bg-black hover:text-white transition-colors">Personal</button>
+            </div>
+
+            <!-- Posts List -->
+            <div class="space-y-0">
+                <a href="/posts/philosophy-of-time.html" class="block" data-category="Philosophy"
+                    data-title="The Philosophy of Time">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 18, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Philosophy of
+                                    Time</h2>
+                                <p class="text-gray-600 mt-2">Time is the only resource that matters. A meditation on
+                                    mortality, urgency, and spending time well.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Philosophy</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">020</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/designing-information-diet.html" class="block" data-category="Productivity"
+                    data-title="Designing Your Information Diet">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 17, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Designing Your
+                                    Information Diet</h2>
+                                <p class="text-gray-600 mt-2">What you consume shapes what you become. A framework for
+                                    intentional information consumption.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Productivity</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">019</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/future-education-self-directed.html" class="block" data-category="Education"
+                    data-title="The Future of Education is Self-Directed">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 16, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Future of
+                                    Education is Self-Directed</h2>
+                                <p class="text-gray-600 mt-2">Traditional education was designed for an industrial age.
+                                    What learning looks like when AI can teach.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Education</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">018</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/creative-process-demystified.html" class="block" data-category="Creativity"
+                    data-title="The Creative Process Demystified">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 15, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Creative
+                                    Process Demystified</h2>
+                                <p class="text-gray-600 mt-2">Creativity isn't magic—it's a process. Understanding how
+                                    ideas actually form.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Creativity</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">017</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/neuroscience-sleep-learning.html" class="block" data-category="Science"
+                    data-title="The Neuroscience of Sleep and Learning">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 14, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Neuroscience
+                                    of Sleep and Learning</h2>
+                                <p class="text-gray-600 mt-2">Why sleep is the most underrated learning tool. The
+                                    science of memory consolidation.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Science</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">016</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/10-books-shaped-thinking.html" class="block" data-category="Reading"
+                    data-title="10 Books That Shaped How I Think">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 13, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">10 Books That
+                                    Shaped How I Think</h2>
+                                <p class="text-gray-600 mt-2">Not a reading list—a map of intellectual influences. The
+                                    books that most changed my mental models.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Reading</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">015</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/case-for-polymath.html" class="block" data-category="Personal"
+                    data-title="The Case for Being a Polymath">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 12, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Case for Being
+                                    a Polymath</h2>
+                                <p class="text-gray-600 mt-2">In an age of specialists, the argument for pursuing many
+                                    interests.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Personal
+                                    Development</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">014</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/stoicism-modern-world.html" class="block" data-category="Philosophy"
+                    data-title="Stoicism for the Modern World">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 11, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Stoicism for the
+                                    Modern World</h2>
+                                <p class="text-gray-600 mt-2">Ancient philosophy, contemporary application. How the
+                                    Stoics remain startlingly relevant.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Philosophy</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">013</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/write-2000-words-daily.html" class="block" data-category="Craft"
+                    data-title="How I Write 2000 Words Per Day">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 10, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">How I Write 2,000
+                                    Words Per Day</h2>
+                                <p class="text-gray-600 mt-2">The systems and habits that make consistent writing
+                                    possible. Not talent—infrastructure.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Craft</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">012</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/mental-models-thinking.html" class="block" data-category="Productivity"
+                    data-title="Mental Models That Changed My Thinking">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 9, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Mental Models That
+                                    Changed My Thinking</h2>
+                                <p class="text-gray-600 mt-2">The frameworks that most improved my decision-making.
+                                    Moving from instinct to intentional reasoning.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Systems
+                                    Thinking</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">011</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/why-read-classics.html" class="block" data-category="Culture"
+                    data-title="Why I Read Classic Literature">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 8, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Why I Read Classic
+                                    Literature</h2>
+                                <p class="text-gray-600 mt-2">In a world of infinite new content, the case for reading
+                                    old books.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Culture</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">010</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/digital-minimalism-ai-age.html" class="block" data-category="Philosophy"
+                    data-title="Digital Minimalism for the AI Age">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 7, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Digital Minimalism
+                                    for the AI Age</h2>
+                                <p class="text-gray-600 mt-2">Technology promises freedom but often delivers bondage. A
+                                    practical philosophy for intentional tool use.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Philosophy</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">009</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/second-brain-obsidian.html" class="block" data-category="Technology"
+                    data-title="Building a Second Brain with Obsidian">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 6, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Building a Second
+                                    Brain with Obsidian</h2>
+                                <p class="text-gray-600 mt-2">A practical guide to personal knowledge management. How to
+                                    capture, connect, and retrieve knowledge.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Technology</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">008</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/what-happened-to-curiosity.html" class="block" data-category="Philosophy"
+                    data-title="What Happened to Curiosity">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 5, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">What Happened to
+                                    Curiosity?</h2>
+                                <p class="text-gray-600 mt-2">A meditation on why we stop asking questions as we age,
+                                    and how to reclaim wonder.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Philosophy</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">007</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/science-of-deep-focus.html" class="block" data-category="Productivity"
+                    data-title="The Science of Deep Focus">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 4, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Science of
+                                    Deep Focus</h2>
+                                <p class="text-gray-600 mt-2">Understanding and cultivating the state of flow that
+                                    produces your best work.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Productivity</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">006</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/first-year-building-online.html" class="block" data-category="Personal"
+                    data-title="My First Year Building Online">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 3, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">My First Year
+                                    Building Online</h2>
+                                <p class="text-gray-600 mt-2">A personal case study in building presence, audience, and
+                                    opportunity from scratch.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Personal</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">005</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/silicon-valley-ai-safety.html" class="block" data-category="Technology"
+                    data-title="Silicon Valley AI Safety Theater">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 2, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Silicon Valley's
+                                    AI Safety Theater</h2>
+                                <p class="text-gray-600 mt-2">A critical look at who benefits from AI safety discourse
+                                    and who gets left behind.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Technology</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">004</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/17-ways-learn-faster.html" class="block" data-category="Learning"
+                    data-title="17 Science-Backed Ways to Learn Faster">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Feb 1, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">17 Science-Backed
+                                    Ways to Learn Faster</h2>
+                                <p class="text-gray-600 mt-2">Evidence-based techniques from cognitive science for
+                                    accelerated learning.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Learning</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">003</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/master-chatgpt-7-days.html" class="block" data-category="Technology"
+                    data-title="Master ChatGPT in 7 Days">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Jan 31, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">Master ChatGPT in
+                                    7 Days</h2>
+                                <p class="text-gray-600 mt-2">A structured curriculum from basic prompting to advanced
+                                    agent building.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Technology</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">002</span>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="/posts/ultimate-guide-ai-tools-2026.html" class="block" data-category="Technology"
+                    data-title="The Ultimate Guide to AI Tools in 2026">
+                    <article class="border-b border-black py-8 group">
+                        <div class="flex justify-between items-start gap-4">
+                            <div>
+                                <span class="font-mono text-xs uppercase text-gray-500">Jan 30, 2026</span>
+                                <h2 class="text-2xl font-bold mt-2 group-hover:italic transition-all">The Ultimate Guide
+                                    to AI Tools in 2026</h2>
+                                <p class="text-gray-600 mt-2">A comprehensive survey of the AI landscape—what works,
+                                    what's hype, and what's coming next.</p>
+                                <span
+                                    class="inline-block mt-4 font-mono text-xs uppercase border border-black px-2 py-1">Technology</span>
+                            </div>
+                            <span class="font-mono text-xs text-gray-400">001</span>
+                        </div>
+                    </article>
+                </a>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="hidden text-center py-12">
+                <p class="text-gray-500 font-mono text-sm uppercase">No posts found matching your criteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-black py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+            <div>
+                <h2 class="text-4xl font-black uppercase">The Midnight Editor.</h2>
+                <p class="font-mono text-xs mt-2">© 2026 Rishaank Gupta. All rights reserved.</p>
+            </div>
+            <div class="flex flex-col gap-2 font-mono text-sm uppercase text-right">
+                <a href="/privacy.html" class="hover:underline">Privacy Policy</a>
+                <a href="/terms.html" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline mt-4">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search and Filter Functionality
+        const searchInput = document.getElementById('searchInput');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const posts = document.querySelectorAll('[data-category]');
+        const noResults = document.getElementById('noResults');
+        let currentFilter = 'all';
+
+        // Filter function
+        function filterPosts() {
+            const searchTerm = searchInput.value.toLowerCase();
+            let visibleCount = 0;
+
+            posts.forEach(post => {
+                const category = post.dataset.category.toLowerCase();
+                const title = post.dataset.title.toLowerCase();
+                const matchesFilter = currentFilter === 'all' || category.includes(currentFilter);
+                const matchesSearch = title.includes(searchTerm) || category.includes(searchTerm);
+
+                if (matchesFilter && matchesSearch) {
+                    post.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+
+            noResults.classList.toggle('hidden', visibleCount > 0);
+        }
+
+        // Search input handler
+        searchInput.addEventListener('input', filterPosts);
+
+        // Filter button handlers
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-black', 'text-white');
+                    b.classList.add('border', 'border-black');
+                });
+                btn.classList.add('bg-black', 'text-white');
+                btn.classList.remove('border', 'border-black');
+                currentFilter = btn.dataset.filter;
+                filterPosts();
+            });
+        });
+
+        // Keyboard shortcut for search (Cmd/Ctrl + K)
+        document.addEventListener('keydown', (e) => {
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+    </script>
+</body>
+
+</html>

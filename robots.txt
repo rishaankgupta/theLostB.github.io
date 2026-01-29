@@ -1,0 +1,22 @@
+# robots.txt for The Midnight Editor
+# https://lostboy.me
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lostboy.me/sitemap.xml
+
+# RSS Feed
+# https://lostboy.me/feed.xml
+
+# Allow all crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Do not crawl admin or system files
+Disallow: /.git/
+Disallow: /.gemini/

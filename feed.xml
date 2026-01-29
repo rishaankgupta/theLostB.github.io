@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>The Midnight Editor</title>
+        <link>https://lostboy.me</link>
+        <description>A personal blog by Rishaank Gupta exploring technology, science, philosophy, creativity, and deep thinking.</description>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <atom:link href="https://lostboy.me/feed.xml" rel="self" type="application/rss+xml"/>
+        <copyright>© 2026 Rishaank Gupta. All rights reserved.</copyright>
+        <managingEditor>site.rishaank@gmail.com (Rishaank Gupta)</managingEditor>
+        <webMaster>site.rishaank@gmail.com (Rishaank Gupta)</webMaster>
+        <image>
+            <url>https://lostboy.me/og-image.jpg</url>
+            <title>The Midnight Editor</title>
+            <link>https://lostboy.me</link>
+        </image>
+        <item>
+            <title>The Paradox of Choice in the Digital Age</title>
+            <link>https://lostboy.me/posts/paradox-of-choice.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/paradox-of-choice.html</guid>
+            <pubDate>Wed, 29 Jan 2026 14:00:00 GMT</pubDate>
+            <description>We have more options than ever, yet feel more paralyzed. An exploration of decision fatigue, intentional living, and reclaiming agency in the age of abundance.</description>
+            <category>Philosophy</category>
+        </item>
+
+        <item>
+            <title>The Philosophy of Time</title>
+            <link>https://lostboy.me/posts/philosophy-of-time.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/philosophy-of-time.html</guid>
+            <pubDate>Tue, 18 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Time is the only resource that matters. A meditation on mortality, urgency, and spending time well.</description>
+            <category>Philosophy</category>
+        </item>
+
+        <item>
+            <title>Designing Your Information Diet</title>
+            <link>https://lostboy.me/posts/designing-information-diet.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/designing-information-diet.html</guid>
+            <pubDate>Mon, 17 Feb 2026 00:00:00 GMT</pubDate>
+            <description>What you consume shapes what you become. A framework for intentional information consumption.</description>
+            <category>Productivity</category>
+        </item>
+
+        <item>
+            <title>The Future of Education is Self-Directed</title>
+            <link>https://lostboy.me/posts/future-education-self-directed.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/future-education-self-directed.html</guid>
+            <pubDate>Sun, 16 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Traditional education is obsolete. Here's what's replacing it.</description>
+            <category>Education</category>
+        </item>
+
+        <item>
+            <title>The Creative Process Demystified</title>
+            <link>https://lostboy.me/posts/creative-process-demystified.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/creative-process-demystified.html</guid>
+            <pubDate>Sat, 15 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Creativity isn't magic. Understanding it as a process you can cultivate and optimize.</description>
+            <category>Creativity</category>
+        </item>
+
+        <item>
+            <title>The Neuroscience of Sleep and Learning</title>
+            <link>https://lostboy.me/posts/neuroscience-sleep-learning.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/neuroscience-sleep-learning.html</guid>
+            <pubDate>Fri, 14 Feb 2026 00:00:00 GMT</pubDate>
+            <description>The most productive thing you can do after studying is sleep. Here's the science.</description>
+            <category>Science</category>
+        </item>
+
+        <item>
+            <title>10 Books That Shaped How I Think</title>
+            <link>https://lostboy.me/posts/10-books-shaped-thinking.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/10-books-shaped-thinking.html</guid>
+            <pubDate>Thu, 13 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Not the best books—the books that most changed how I see the world.</description>
+            <category>Reading</category>
+        </item>
+
+        <item>
+            <title>The Case for Being a Polymath</title>
+            <link>https://lostboy.me/posts/case-for-polymath.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/case-for-polymath.html</guid>
+            <pubDate>Wed, 12 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Why specialization might be overrated. The case for diverse interests.</description>
+            <category>Personal Development</category>
+        </item>
+
+        <item>
+            <title>Stoicism for the Modern World</title>
+            <link>https://lostboy.me/posts/stoicism-modern-world.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/stoicism-modern-world.html</guid>
+            <pubDate>Tue, 11 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Ancient wisdom for managing modern anxiety. Marcus Aurelius had the same struggles.</description>
+            <category>Philosophy</category>
+        </item>
+
+        <item>
+            <title>How I Write 2,000 Words Per Day</title>
+            <link>https://lostboy.me/posts/write-2000-words-daily.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/write-2000-words-daily.html</guid>
+            <pubDate>Mon, 10 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Not a hack. Not a trick. Just a system that works.</description>
+            <category>Craft</category>
+        </item>
+
+        <item>
+            <title>Mental Models That Changed My Thinking</title>
+            <link>https://lostboy.me/posts/mental-models-thinking.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/mental-models-thinking.html</guid>
+            <pubDate>Sun, 09 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Thinking tools that apply across every domain. The cognitive shortcuts of top performers.</description>
+            <category>Systems Thinking</category>
+        </item>
+
+        <item>
+            <title>Why I Read Classic Literature</title>
+            <link>https://lostboy.me/posts/why-read-classics.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/why-read-classics.html</guid>
+            <pubDate>Sat, 08 Feb 2026 00:00:00 GMT</pubDate>
+            <description>In an infinite-content world, why spend time on books from dead authors?</description>
+            <category>Culture</category>
+        </item>
+
+        <item>
+            <title>Digital Minimalism for the AI Age</title>
+            <link>https://lostboy.me/posts/digital-minimalism-ai-age.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/digital-minimalism-ai-age.html</guid>
+            <pubDate>Fri, 07 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Cal Newport's principles need updating. The new attention economy requires new strategies.</description>
+            <category>Philosophy</category>
+        </item>
+
+        <item>
+            <title>Building a Second Brain with Obsidian</title>
+            <link>https://lostboy.me/posts/second-brain-obsidian.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/second-brain-obsidian.html</guid>
+            <pubDate>Thu, 06 Feb 2026 00:00:00 GMT</pubDate>
+            <description>After three years and 4,000 notes, here's what I've learned about personal knowledge management.</description>
+            <category>Technology</category>
+        </item>
+
+        <item>
+            <title>What Happened to Curiosity?</title>
+            <link>https://lostboy.me/posts/what-happened-to-curiosity.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/what-happened-to-curiosity.html</guid>
+            <pubDate>Wed, 05 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Children ask 300 questions a day. Adults ask almost none. Something goes terribly wrong.</description>
+            <category>Philosophy</category>
+        </item>
+
+        <item>
+            <title>The Science of Deep Focus</title>
+            <link>https://lostboy.me/posts/science-of-deep-focus.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/science-of-deep-focus.html</guid>
+            <pubDate>Tue, 04 Feb 2026 00:00:00 GMT</pubDate>
+            <description>The neuroscience of attention and practical techniques for cultivating deep concentration.</description>
+            <category>Productivity</category>
+        </item>
+
+        <item>
+            <title>My First Year Building Online</title>
+            <link>https://lostboy.me/posts/first-year-building-online.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/first-year-building-online.html</guid>
+            <pubDate>Mon, 03 Feb 2026 00:00:00 GMT</pubDate>
+            <description>What worked, what didn't, and what I'd tell myself at the beginning.</description>
+            <category>Personal</category>
+        </item>
+
+        <item>
+            <title>Silicon Valley's AI Safety Theater</title>
+            <link>https://lostboy.me/posts/silicon-valley-ai-safety.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/silicon-valley-ai-safety.html</guid>
+            <pubDate>Sun, 02 Feb 2026 00:00:00 GMT</pubDate>
+            <description>The uncomfortable truth about who's really steering the conversation on existential risk.</description>
+            <category>Technology</category>
+        </item>
+
+        <item>
+            <title>17 Science-Backed Ways to Learn Faster</title>
+            <link>https://lostboy.me/posts/17-ways-learn-faster.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/17-ways-learn-faster.html</guid>
+            <pubDate>Sat, 01 Feb 2026 00:00:00 GMT</pubDate>
+            <description>Evidence-based techniques from cognitive science and neuroscience to accelerate learning.</description>
+            <category>Learning</category>
+        </item>
+
+        <item>
+            <title>Master ChatGPT in 7 Days</title>
+            <link>https://lostboy.me/posts/master-chatgpt-7-days.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/master-chatgpt-7-days.html</guid>
+            <pubDate>Fri, 31 Jan 2026 00:00:00 GMT</pubDate>
+            <description>From basic prompting to advanced techniques. A complete roadmap for AI mastery.</description>
+            <category>Technology</category>
+        </item>
+
+        <item>
+            <title>The Ultimate Guide to AI Tools in 2026</title>
+            <link>https://lostboy.me/posts/ultimate-guide-ai-tools-2026.html</link>
+            <guid isPermaLink="true">https://lostboy.me/posts/ultimate-guide-ai-tools-2026.html</guid>
+            <pubDate>Thu, 30 Jan 2026 00:00:00 GMT</pubDate>
+            <description>A comprehensive survey of the AI landscape—what works, what's hype, and what's coming next.</description>
+            <category>Technology</category>
+        </item>
+    </channel>
+</rss>
